@@ -1,27 +1,46 @@
-# EventBookingApp
+# 🎫 Event Booking App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+A responsive full-stack event booking web application built using **Angular 18** for the frontend and **Node.js** for backend interactions (with a public REST API). Users can browse events and book tickets, while event organizers can manage their own events and view bookings.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 👥 Roles
 
-## Code scaffolding
+### 👤 Users
+- 🔍 **Home Page** – View all available events
+- 📄 **Event Page** – View event details with option to book
+- 🔐 **Login/Register** – Handled via modal popups
+- 🎟️ **Book Tickets** – Book event tickets from modal
+- 📂 **My Bookings** – View all bookings made by the logged-in user
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🛠️ Admin / Event Organizer
+- 📝 **Register as Organizer** – Sign up to create/manage events
+- ➕ **Create Events** – Add new events via dashboard
+- 📈 **View Bookings** – See bookings received for created events
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🌐 Public API Used
 
-## Running unit tests
+- API Base URL: [`https://freeapi.miniprojectideas.com`](https://freeapi.miniprojectideas.com/index.html)
+- Controller: `EventBooking`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+All API calls are made using HTTP methods to interact with the public backend.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🛠️ Tech Stack
 
-## Further help
+- **Frontend**: Angular 18, Bootstrap 5, HTML, CSS
+- **Backend**: Public REST API (No local backend server required)
+- **Routing**: Angular Router
+- **Modals**: Bootstrap modal for Login, Register, and Booking
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+- Node.js (>=18.x)
+- Angular CLI 18+
+- Internet connection (to access public API)
