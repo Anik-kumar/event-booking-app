@@ -1,17 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { IApiResponse } from '../interfaces/common';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventService {
 
-  apiUrl = 'https://freeapi.miniprojectideas.com/api/EventBooking';
+  getAllEventsUrl: string = `/api/EventBooking/GetAllEvents`;
 
   constructor(private http: HttpClient) { }
 
 
-  getAllEvents() {    
-    return this.http.get(`${this.apiUrl}/GetAllEvents`);
+  getAllEvents() { 
+    return this.http.get<IApiResponse>(this.getAllEventsUrl);
   }
 }

@@ -1,16 +1,29 @@
-export interface IApiResponse<T> {
+export interface IApiResponse {
   result: boolean;
   message: string;
-  data: T;
+  data: any;
 }
 
+// export interface IEvent {
+//   id: number;
+//   name: string;
+//   description: string;
+//   date: string;
+//   time: string;
+//   location: string;
+//   price: number;
+//   imageUrl: string;
+// }
+
 export interface IEvent {
-  id: number;
-  name: string;
-  description: string;
-  date: string;
-  time: string;
-  location: string;
+  eventId: number;
+  eventName: string;
+  startDate: Date;
+  startTime: string;
+  endDate: Date;
+  organizerName: string;
+  userId: number;
   price: number;
+  location: string;
   imageUrl: string;
 }

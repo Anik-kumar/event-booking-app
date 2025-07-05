@@ -59,6 +59,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "event-booking-app:build:production"
@@ -67,6 +70,7 @@
               "buildTarget": "event-booking-app:build:development"
             }
           },
+          
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
