@@ -21,7 +21,11 @@ export interface IEvent {
   startDate: Date;
   startTime: string;
   endDate: Date;
+  endTime: string;
+  capacity: number;
   organizerName: string;
+  organizerId: number;
+  description: string;
   userId: number;
   price: number;
   location: string;
